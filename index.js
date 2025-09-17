@@ -20,7 +20,7 @@ function Hiru(){
     document.getElementById("switchn").src= "およる_統合.png";
     document.getElementById("cs_icon").src= "アイコン_統合.png";
     document.getElementById("ms_icon").src= "mihos_統合.png";
-    document.getElementById("topphoto").src= "top_昼_full.jpg";
+    document.getElementById("topphoto").src= "top_昼_full.JPG";
     
     for (var i = 0; i < elements.length; i++) {
       var element = document.getElementById(elements[i]);
@@ -49,7 +49,7 @@ function Yoru(){
     document.getElementById("switchn").src="およる_夜.png";
     document.getElementById("cs_icon").src= "アイコン_夜.png";
     document.getElementById("ms_icon").src= "mihos_夜.png";
-    document.getElementById("topphoto").src= "top_夜_full.jpg";
+    document.getElementById("topphoto").src= "top_夜_full.JPG";
     
     for (var i = 0; i < elements.length; i++) {
       var element = document.getElementById(elements[i]);
