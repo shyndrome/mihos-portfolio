@@ -1,0 +1,412 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0;
+    background-color: #3a3a3a;
+}
+
+.pc {
+    position: block !important;
+}
+.sp {
+    position: none;
+}
+
+/*tablet*/
+@media only screen and (max-width:960px) {
+    .pc {
+        position: none;
+    }
+    
+    .sp {
+        position: block !important;
+    }
+
+    #lefting {
+        z-index: 999;
+        position: relative;
+        display: flex;
+    }
+
+    .mihos {
+        position: absolute;
+        padding: 2.5vw;
+        left: 0;
+    }
+
+    #cs_icon,
+    #ms_icon {
+        width: 15vw;
+        background-color: transparent;
+    }
+
+    #righting {
+        width: 100vw;
+    }
+
+    #topphoto {
+        width: 100vw;
+    }
+
+    .switches {
+        padding-top: 2.5vw;
+        position: absolute;
+        left: 75vw;
+        z-index: 999;
+    }
+
+    #switchd {
+        width: 10vw;
+        position: absolute;
+    }
+    
+    #switchn {
+        position: absolute;
+        width: 7.5vw;
+        padding: 1vw;
+        left: 12.5vw;
+    }
+
+    .mepho {
+        text-align: center;
+    }
+    
+    .mepho_to {
+        width: 70vw;
+    }
+
+    .profile {
+        font-size: 3vw;
+        list-style-type: circle;
+    }
+
+    .html {
+        width: 40vw;
+        margin: 2.5vw;
+    }
+    
+    .touchlabss {
+        text-align: center;
+    }
+    
+    .res_light {
+        width: 80vw;
+    }
+
+    .sozokobo {
+        text-align: center;
+    }
+
+    .sozophoto {
+        width: 70vw;
+    }
+
+    .level {
+        font-size: 2.5vw;
+    }
+
+    /*sp文字*/
+    h1 {
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+    
+    a {
+        color: #3a3a3a;
+        text-decoration: none;
+    }
+    
+    .cap_cap {
+        font-size: 2vw;
+    }
+    
+    .htmltitle {
+        font-size: 2.5vw;
+    }
+    
+    table {
+        margin: 0;
+    }
+    
+    td {
+        text-align: center;
+    }
+
+    /*tabの形状*/
+    .menu_tab{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 2.5vw;
+    }
+
+    .menu_tab li {
+        list-style: none;
+        font-size: 4vw;
+        width: 25vw;
+        text-align: center;
+    }
+
+    .menu_tab li a{
+        display: block;
+        background-color: #fff;
+        margin: 0 1vw;
+        padding: 1.25vw 0vw;
+        color: #3a3a3a;
+        text-decoration: none;
+    }
+
+
+    /*liにactiveクラスがついた時の形状*/
+    .menu_tab li.active a{
+        background-color:#fff;
+        border-bottom: 0.5vw solid #81c5b6;
+    }
+
+
+    /*エリアの表示非表示と形状*/
+    .area {
+        display: none;/*はじめは非表示*/
+        opacity: 0;/*透過0*/
+        background: #fff;
+        padding:5vw;
+    }
+}
+
+
+
+/*pc*/
+@media only screen and (min-width:961px) {
+
+    .first {
+        position: relative;
+        width: 0;
+        display: flex;
+    }
+
+    #lefting {
+        z-index: 999;
+        position: relative;
+        display: flex;
+        height: 100vh;
+        width: 30vw;
+    }
+
+    .switches {
+        padding-top: 2.5vw;
+        position: absolute;
+        left: 75vw;
+        z-index: 999;
+    }
+
+    #switchd {
+        width: 10vw;
+        position: absolute;
+    }
+
+    #switchn {
+        width: 7.5vw;
+        padding: 1vw;
+        position: absolute;
+        left: 12.5vw;
+    }
+
+    .mihos {
+        text-align: center;
+        vertical-align: middle;
+        width: 30vw;
+        position: absolute;
+        top: 25vh;
+    }
+
+    #cs_icon,
+    #ms_icon {
+        width: 20vw;
+        background-color: transparent;
+    }
+
+    #righting {
+        width: 70vw
+    }
+
+    #topphoto {
+        position: absolute;
+        left: 30vw;
+        width: 70vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .mepho {
+        display: flex;
+        float: left;
+    }
+
+    .mepho_to {
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        object-position: 80% 100%;
+    }
+
+    .pro_ul {
+        display: flex;
+    }
+
+    .profile {
+        font-size: 2vw;
+        list-style-type: circle;
+    }
+
+    .html {
+        width: 40vw;
+        margin: 2.5vw;
+    }
+    
+    .touchlabss {
+        text-align: center;
+    }
+    
+    .res_light {
+        width: 80vw;
+    }
+
+    .sozokobo {
+        margin-bottom: 5vw;
+    }
+    
+    .sozophoto {
+        display: flex;
+        float: left;
+        width: 25vw;
+        height: 20vw;
+        object-fit: cover;
+        padding-right: 2.5vw;
+    }
+
+    .sensec {
+        display: flex;
+    }
+
+    /*pc文字*/
+    h1 {
+        color: #fff;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 4vw;
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 3vw;
+        margin: 1.25vw;
+    }
+
+    h4 {
+        font-size: 2.5vw;
+        margin: 1.5vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    .level {
+        font-size: 1.75vw;
+    }
+    
+    a {
+        color: #3a3a3a;
+        text-decoration: none;
+    }
+    
+    .cap_cap {
+        font-size: 2vw;
+    }
+    
+    .htmltitle {
+        font-size: 2.5vw;
+    }
+    
+    table {
+        margin: 0;
+    }
+    
+    td {
+        text-align: center;
+    }
+
+    /*tabの形状*/
+    .menu_tab{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 2.5vw;
+        margin: 0;
+    }
+
+    .menu_tab li {
+        list-style: none;
+        font-size: 2.5vw;
+        width: 17.5vw;
+        text-align: center;
+    }
+
+    .menu_tab li a{
+        display: block;
+        background-color: #fff;
+        margin: 0 1vw;
+        padding: 1.25vw 0vw;
+        color: #3a3a3a;
+        text-decoration: none;
+    }
+
+
+    /*liにactiveクラスがついた時の形状*/
+    .menu_tab li.active a{
+        background-color:#fff;
+        border-bottom: 0.5vw solid #81c5b6;
+    }
+
+
+    /*エリアの表示非表示と形状*/
+    .area {
+        display: none;/*はじめは非表示*/
+        opacity: 0;/*透過0*/
+        background: #fff;
+        padding: 4vw;
+    }
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
